@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+
+/* Menu */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: "Merienda";
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    height: 70px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #ffc34a;
+    font-size: 50px;
+    right: -40px;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: block;
+    width: 250px;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    background: #ffffff;
+    color: #101010;
+    transition: .75s;
+}
+
+/* Sección 1 */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.card {
+    position: absolute;
+    top: 350px;
+    left: 510px;
+    height: 370px;
+    width: 95%;
+    max-width: 850px;
+    text-align: center;
+    border-radius: 25px;
+    background: #7a5836;
+}
+
+.inner-part {
+    position: absolute;
+    display: flex;
+    height: 360px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    flex-wrap: wrap;
+}
+
+.inner-part .img {
+    height: 310px;
+    width: 260px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.content {
+    padding: 0 20px 0 35px;
+    width: 530px;
+    margin-left: 5px;
+    transition: .6s;
+}
+
+.content .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Sección 2 */
+.carrera {
+    background: #d4c19a;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    margin-top: 100vh;
+}
+
+.card-2 {
+    position: relative;
+    top: 180px;
+    left: 380px;
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img2 {
+    height: 500px;
+    width: 450px;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+    transform: translateY(100%);
+}
+
+.card-title {
+    color: #c58545;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.card-info {
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.card-2:hover {
+    cursor: pointer;
+}
+
+.card-2:hover .contenido {
+    top: 0;
+    height: 500px;
+    width: 500px;
+    background: rgba(107, 92, 92, 0.76);
+    transform: translateY(0);
+}
+
+.card-2:hover .card-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-2:hover .img2 {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.carrera-desc {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 300px;
+    font-weight: 500;
+    margin-left: 45px;
+    text-align: center;
+}
+
+.carrera-titulo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 450;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.carrera-desc a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carrera-desc a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sección 3 */
+.carrera-info {
+    background: #c9b897;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card-3 {
+    position: relative;
+    top: 200px;
+    height: 500px;
+    margin: 0 150px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img2 {
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+.card3-body {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+    transform: translateY(100%);
+}
+
+.card3-title {
+    color: #c58545;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.card3-info {
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.card-3:hover {
+    cursor: pointer;
+}
+
+.card-3:hover .card3-body {
+    top: 0;
+    height: 500px;
+    background: rgba(107, 92, 92, 0.76);
+    transform: translateY(0);
+}
+
+.card-3:hover .card3-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-3:hover .img2 {
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Sección 4 */
+.trabajo {
+    background: linear-gradient(rgba(5, 7, 12, 0.10), rgba(5, 7, 12, 0.10)), url(imagenes/img3.jpg) no-repeat center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 60px 200px 130px;
+}
+
+.trabajo-content {
+    margin-top: 60px;
+    margin: auto;
+}
+
+.trabajo-titulo {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 450;
+    margin-bottom: 40px;
+}
+
+.trabajo-info {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.trabajo-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.trabajo-content a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sección 5 */
+.copy-rigth {
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+}
+
+/* Add CSS styles for mobile devices */
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .logo a {
+        font-size: 40px;
+    }
+
+    .navbar a {
+        width: 150px;
+        font-size: 18px;
+    }
+
+    .header {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+    }
+
+    .card {
+        top: 250px;
+        height: 250px;
+    }
+
+    .inner-part {
+        height: 220px;
+    }
+
+    .img {
+        height: 200px;
+        width: 150px;
+    }
+
+    .content .title {
+        font-size: 20px;
+    }
+
+    .carrera {
+        height: auto;
+        margin-top: 500px;
+    }
+
+    .card-2 {
+        top: 100px;
+        height: 250px;
+    }
+
+    .img2 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .contenido {
+        bottom: 0;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-info {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .carrera-desc {
+        font-size: 16px;
+        line-height: 18px;
+        margin: 50px;
+    }
+
+    .carrera-titulo {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .card-3 {
+        top: 150px;
+        height: 250px;
+    }
+
+    .img2 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card3-body {
+        bottom: 0;
+        height: auto;
+    }
+
+    .card3-title {
+        font-size: 20px;
+    }
+
+    .card3-info {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .trabajo {
+        padding: 60px 20px 130px;
+    }
+
+    .trabajo-content {
+        margin-top: 30px;
+    }
+
+    .trabajo-titulo {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .trabajo-info {
+        font-size: 14px;
+    }
+}

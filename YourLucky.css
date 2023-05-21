@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Merienda";
+    background-image: url(fondo-pan.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.redes a img{
+    width: 40px;
+    display: inline-block;
+    margin: 15px;
+}
+.info{
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header{
+    max-width: 1500px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 20px;
+}
+
+nav ul li a{
+    text-decoration: 100px;
+    color: #fff;
+    font-size: 20px;
+    
+}
+
+section{
+    padding-top:  100px;
+    text-align: center;
+}
+
+section h1{
+font-size: 90px;
+text-align: center;
+background: linear-gradient(#537A92, #F06B71);
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+animation: text 5s linear infinite;
+}
+
+@keyframes text{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+section a{
+    text-decoration:  none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+}
